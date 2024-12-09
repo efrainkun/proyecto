@@ -1,0 +1,126 @@
+/* Variables */
+:root {
+    --primary-color: #6c63ff;
+    --secondary-color: #f4f4f9;
+    --text-color: #333;
+    --footer-bg: #333;
+    --footer-text: #fff;
+}
+
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+header {
+    background: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header .hero {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Secciones */
+.section {
+    padding: 40px 20px;
+    text-align: center;
+    background: white;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+}
+
+#galeria .imagenes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#galeria .imagenes img {
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+#galeria .imagenes img:hover {
+    transform: scale(1.05);
+}
+
+/* Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #5b52d0;
+}
+
+/* Footer */
+footer {
+    background: var(--footer-bg);
+    color: var(--footer-text);
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
